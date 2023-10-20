@@ -98,6 +98,7 @@ public class JavaOne {
         int second = scan.nextInt();
         int result = first + second;
         System.out.println("Result: " + result);
+        
     }
 
     public void ex7() {
