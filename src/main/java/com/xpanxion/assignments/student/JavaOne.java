@@ -101,7 +101,22 @@ public class JavaOne {
     }
 
     public void ex7() {
-        System.out.println("Student 1: ex7.");
+        System.out.println("Enter first number: ");
+        int first = scan.nextInt();
+        System.out.println("Enter second number: ");
+        int second = scan.nextInt();
+        int result = 0;
+        System.out.println("Enter operation (add, sub, mul, div): ");
+        String input = scan.next();
+        if(input.equalsIgnoreCase("add"))
+            result = first + second;
+        else if(input.equalsIgnoreCase("sub"))
+            result = first - second;
+        else if(input.equalsIgnoreCase("mul"))
+            result = first * second;
+        else if(input.equalsIgnoreCase("div"))
+            result = first / second;
+        System.out.println("Result: " + result);
     }
 
     public void ex8() {
