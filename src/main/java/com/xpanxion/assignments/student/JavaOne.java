@@ -120,7 +120,24 @@ public class JavaOne {
     }
 
     public void ex8() {
-        System.out.println("Student 1: ex8.");
+        System.out.println("Enter price per square feet: ");
+        double price = scan.nextDouble();
+        double total = 0;
+        String done = "", num1s = "", num2s = "";
+        while(!done.equalsIgnoreCase("done")){
+            System.out.println("Enter room dimensions (width x height): ");
+            done = scan.next();
+            boolean first = true;
+            StringTokenizer st =  new StringTokenizer(done);
+            while(st.hasMoreTokens()){
+                if(st.nextToken().equalsIgnoreCase("x")))
+                else if(first)
+
+
+            }
+
+        }
+        System.out.println("Total cost; $" + total);
     }
 
     public void ex9() {
