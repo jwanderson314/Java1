@@ -92,10 +92,12 @@ public class JavaOne {
     }
 
     public void ex6() {
-//        System.out.println("Enter first number: ");
-//        int first = scan.nextInt();
-//        System.out.println("Enter second number: ");
-//        int second = scan.nex
+        System.out.println("Enter first number: ");
+        int first = scan.nextInt();
+        System.out.println("Enter second number: ");
+        int second = scan.nextInt();
+        int result = first + second;
+        System.out.println("Result: " + result);
     }
 
     public void ex7() {
