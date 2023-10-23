@@ -1,6 +1,7 @@
 package com.xpanxion.assignments.student;
 
 import java.sql.SQLOutput;
+import java.util.Random;
 import java.util.Scanner;
 import java.util.StringTokenizer;
 
@@ -148,7 +149,16 @@ public class JavaOne {
 
     public void ex9() {
 
-        System.out.println("Student 1: ex9.");
+        int guess = 0;
+        Random rand = new Random();
+        int num = rand.nextInt(5) + 1;
+        while(guess != num){
+            System.out.println("Enter a number: ");
+            guess = scan.nextInt();
+            if(guess != num)
+                System.out.println("Try again...");
+        }
+        System.out.println("You guessed it!");
     }
 
     public void ex10() {
