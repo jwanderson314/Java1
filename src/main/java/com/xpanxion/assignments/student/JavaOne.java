@@ -162,7 +162,21 @@ public class JavaOne {
     }
 
     public void ex10() {
-        System.out.println("Student 1: ex10.");
+        System.out.println("Enter a string: ");
+        String text = scan.nextLine();
+        String[] parts = text.split(" ");
+        int count = 0;
+        for(int i = 0; i < parts.length; i++){
+            for(int c = 0; c < parts[i].length(); c++){
+                while(count < c)
+                {
+                    System.out.print(" ");
+                    count++;
+                }
+                count = 0;
+                System.out.println(parts[i].charAt(c));
+            }
+        }
     }
 
     //
