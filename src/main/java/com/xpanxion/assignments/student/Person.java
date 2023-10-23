@@ -12,6 +12,13 @@ public class Person {
 
     }
 
+    public Person( String y){
+        String[] parts = y.split(" ");
+        this.firstName = parts[0];
+        this.lastName = parts[1];
+
+    }
+
     public void persontoString(){
         System.out.println("id = " + this.id + ", firstName = " + this.firstName + ", lastName = " + this.lastName);
     }
