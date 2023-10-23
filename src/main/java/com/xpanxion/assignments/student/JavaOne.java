@@ -120,27 +120,34 @@ public class JavaOne {
     }
 
     public void ex8() {
+        Scanner scan1 = new Scanner(System.in);
         System.out.println("Enter price per square feet: ");
-        double price = scan.nextDouble();
+        double price = scan1.nextDouble();
         double total = 0;
-        String done = "", num1s = "", num2s = "";
-        while(!done.equalsIgnoreCase("done")){
-            System.out.println("Enter room dimensions (width x height): ");
-            done = scan.next();
-            boolean first = true;
-            StringTokenizer st =  new StringTokenizer(done);
-            while(st.hasMoreTokens()){
-                if(st.nextToken().equalsIgnoreCase("x")))
-                else if(first)
-
-
+        String done = "";
+        do{
+            System.out.println("Enter carpet dimensions: ");
+            done = scan.nextLine();
+            if(done.equals("done"))
+            {
+                break;
             }
+            String[] parts = done.split("x");
+            String p1 = parts[0];
+            String p2 = parts[1];
 
-        }
-        System.out.println("Total cost; $" + total);
+            p1 = p1.substring(0, p1.length()-1);
+            p2 = p2.substring(1);
+            int n1 = Integer.parseInt(p1);
+            int n2 = Integer.parseInt(p2);
+            total += price * (n1 * n2);
+        }while(!done.equalsIgnoreCase("done"));
+        System.out.println("Total cost: $" + total);
+
     }
 
     public void ex9() {
+
         System.out.println("Student 1: ex9.");
     }
 
